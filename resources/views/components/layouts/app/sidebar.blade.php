@@ -38,7 +38,6 @@
                 </flux:navlist.group>
                 <flux:navlist.group :heading="__('Accounting')" class="grid">
                     <flux:navlist.item icon="users" :href="route('payrolls.index')" :current="request()->routeIs('payrolls.*')" wire:navigate>{{ __('Payrolls') }}</flux:navlist.item>
-                    <flux:navlist.item icon="users" :href="route('payments.index')" :current="request()->routeIs('payments.*')" wire:navigate>{{ __('Payroll Payments') }}</flux:navlist.item>
                 </flux:navlist.group>
                 @endif
             </flux:navlist>
